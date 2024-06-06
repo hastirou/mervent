@@ -28,7 +28,7 @@ class Auth extends CI_Controller
 		$password = $this->input->post('password');
 
 		if ($this->auth->login($username, $password)) {
-			redirect('admin');
+			redirect('admin/dashboard');
 		} else {
 			$this->session->set_flashdata('message_login_error', 'Login Gagal, pastikan username dan password benar!');
 		}
