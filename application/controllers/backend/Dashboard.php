@@ -15,7 +15,8 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		$data['content'] = 'backend/dashboard';
-
+		$data['current_user'] = $this->auth_model->current_user();
+	
 		$this->load->view('backend/layouts/app', $data);
-	}
+	}	
 }
