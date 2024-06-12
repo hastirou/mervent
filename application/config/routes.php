@@ -8,4 +8,4 @@ $route['translate_uri_dashes'] = FALSE;
 $route['login'] = 'auth/login';
 
 //backend
-$route['admin/dashboard'] = 'backend/dashboard/index';
+$route['admin/dashboard'] = 'admin/dashboard/index';
