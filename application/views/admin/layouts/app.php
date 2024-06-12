@@ -38,13 +38,13 @@
     </ul>
   </nav>
   <!-- /.navbar -->
-  <?php $this->load->view('backend/layouts/sidebar'); ?>
+  <?php $this->load->view('admin/layouts/sidebar'); ?>
   <div class="content-wrapper">
   <?php if(isset($content)) {?>  
   <?php $this->load->view($content) ?>
   <?php }?>
   </div>
-  <?php $this->load->view('backend/layouts/footer'); ?>
+  <?php $this->load->view('admin/layouts/footer'); ?>
 
 <!-- REQUIRED SCRIPTS -->
 <!-- jQuery -->
