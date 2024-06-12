@@ -16,8 +16,6 @@
 		</div>
 		<ul>
 			<li><a href="#">Home</a></li>
-			<li><a href="#">Create an Event</a></li>
-			<li><a href="#">Help & Support</a></li>
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">About Us</a></li>
 			<li><a href="#">Sign In</a></li>
@@ -35,10 +33,6 @@
 	<section class="banner">
 		<div class="banner-area">
 			<p>Browse what Event you Want</p>
-			<div class="search-wrapper">
-			<input type="text" name="events" placeholder="Search events">
-			<input type="text" name="location" placeholder="Location">
-			<button type="submit">Find</button>
 			</div>
 	</section>
 
@@ -60,7 +54,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -72,19 +65,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
-				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
-				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
-				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
-                </div>
-			</div>
-
-			<div class="box">
-				<div class="img-wrapper">
-					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
-				</div>
-                <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -96,7 +76,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -108,7 +87,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -120,7 +98,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -132,7 +109,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -144,7 +120,6 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -156,7 +131,17 @@
 					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
 				</div>
                 <div class="event-description">
-                <button><i class="fa fa-heart"></i></button>
+				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
+				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
+				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
+                </div>
+			</div>
+
+			<div class="box">
+				<div class="img-wrapper">
+					<img src="<?= base_url('assets/frontend/img/Banner-event.png')?>">
+				</div>
+                <div class="event-description">
 				<h3>Spot Birding Photography in Bromo Tengger Semeru National Park</h3>
 				<p class="date">Sunday, 5 June 2022 07.00 - 11.00 WIB</p>
 				<p class="description">Pronojiwo - Pronojiwo - East Java</p>
@@ -172,7 +157,6 @@
 		<ul>
 			<li><i class="fa fa-home"></i> <a href="#">Home</a></li>
 			<li><i class="fa fa-calendar"></i> <a href="#">Schedule</a></li>
-            <li><a class="create" href="#"><i class="fa fa-plus-circle"></i></a></li>
 			<li><i class="fa fa-heart"></i> <a href="#">Favorite</a></li>
 			<li><i class="fa fa-user"></i> <a href="#">Profile</a></li>
 		</ul>
