@@ -35,8 +35,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item menu-open">
-            <a href="#" class="nav-link active">
+          <li class="nav-item">
+            <a href="<?php echo site_url('admin/dashboard') ?>" class="nav-link <?php echo ($this->uri->segment(2) == 'dashboard') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -44,10 +44,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="<?php echo site_url('admin/event') ?>" class="nav-link <?php echo ($this->uri->segment(2) == 'event') ? 'active' : ''; ?>">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Cooming Soon
+                Event
                 <!-- <span class="right badge badge-danger">New</span> -->
               </p>
             </a>

@@ -18,9 +18,6 @@
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Contact Us</a></li>
 			<li><a href="#">About Us</a></li>
-			<li><a href="#">Sign In</a></li>
-			<li><a href="#">Sign Up</a></li>
-            <li style="margin-bottom: 50px;"><a href="#" class="logout">Log out</a></li>
 		</ul>
 
 

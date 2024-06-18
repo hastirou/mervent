@@ -8,6 +8,7 @@ class Auth extends CI_Controller
 		parent::__construct();
 		$this->load->model('auth_model', 'auth');
 		$this->load->library('form_validation', null, 'validation');
+		$this->load->model('auth_model');
 	}
 	
 	public function index()
@@ -17,6 +18,10 @@ class Auth extends CI_Controller
 
 	public function login()
 	{
+		if($this->auth_model->current_user()){
+			redirect('admin/dashboard');
+		}
+		
 		$rules = $this->auth->rules();
 		$this->validation->set_rules($rules);
 
