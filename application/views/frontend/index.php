@@ -31,10 +31,11 @@
 	</nav>
 
 	<section class="banner">
-		<div class="banner-area">
-			<p>Browse what Event you Want</p>
-			</div>
-	</section>
+    <div class="banner-area">
+        <p>Inovasi untuk Transformasi dan Pertumbuhan Bisnis yang Optimal</p>
+    </div>
+</section>
+
 
 	<section class="popular-event">
 		<div class="popular-event-wrapper">
