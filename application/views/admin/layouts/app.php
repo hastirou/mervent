@@ -7,12 +7,22 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+	<link rel="stylesheet" href="<?= base_url() ?>assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="<?= base_url('assets/plugins/fontawesome-free/css/all.min.css') ?>">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="<?= base_url('assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css') ?>">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('assets/dist/css/adminlte.min.css') ?>">
+	<script src="https://cdn.ckeditor.com/ckeditor5/41.4.2/classic/ckeditor.js"></script>
+	<style>
+		.ck-editor__editable_inline {
+			min-height: 400px;
+			color: black;
+		}
+	</style>
 </head>
 <body class="hold-transition dark-mode sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed">
 <div class="wrapper">
@@ -58,7 +68,10 @@
 <script src="<?= base_url('assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') ?>"></script>
 <!-- AdminLTE App -->
 <script src="<?= base_url('assets/dist/js/adminlte.js') ?>"></script>
-
+	<script src="<?= base_url() ?>assets/plugins/datatables/jquery.dataTables.min.js"></script>
+	<script src="<?= base_url() ?>assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+	<script src="<?= base_url() ?>assets/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+	<script src="<?= base_url() ?>assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
 <!-- PAGE PLUGINS -->
 <!-- jQuery Mapael -->
 <script src="<?= base_url('assets/plugins/jquery-mousewheel/jquery.mousewheel.js') ?>"></script>
@@ -67,10 +80,26 @@
 <script src="<?= base_url('assets/plugins/jquery-mapael/maps/usa_states.min.js') ?>"></script>
 <!-- ChartJS -->
 <script src="<?= base_url('assets/plugins/chart.js/Chart.min.js') ?>"></script>
-
-<!-- AdminLTE for demo purposes -->
-<script src="<?= base_url('assets/dist/js/demo.js') ?>"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?= base_url('assets/dist/js/pages/dashboard2.js') ?>"></script>
+<script>
+	$(function () {
+		$("#basic-datatables").DataTable();
+	});
+</script>
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#description' ),{
+			toolbar : [
+				'undo', 'redo',
+				'|', 'bold', 'italic', 'link', 'heading' ,
+				'|', 'numberedList', 'bulletedList', 'blockQuote', 'outdent', 'indent'],
+			language : 'en'
+		} )
+		.then( editor => {
+			console.log( 'Editor was initialized', editor );
+		} )
+		.catch( error => {
+			console.error( 'Error occurred', error );
+		} );
+</script>
 </body>
 </html>

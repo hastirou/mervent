@@ -24,7 +24,7 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            <table id="example2" class="table table-bordered table-hover">
+                            <table class="table table-bordered table-hover" id="basic-datatables">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -35,19 +35,24 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>1</td>
-                                        <td>Outbound PT. Sejahtera Tiga Putra</td>
-                                        <td>Wednesday, 15 Feb 2024</td>
-                                        <td>Wednesday, 15 Feb 2024</td>
-                                        <td>
-                                            <a href="" class="btn btn-warning">Edit</a>
-                                            &nbsp;
-                                            <a href="" class="btn btn-info">Detail</a>
-                                            &nbsp;
-                                            <a href="" class="btn btn-danger">Delete</a>
-                                        </td>
-                                    </tr>
+                                    <?php
+										$no = 1;
+										foreach ($data as $event){
+									?>
+												<tr>
+													<td><?= $no++ ?></td>
+													<td><?= $event->title ?></td>
+													<td><?= $event->date ?></td>
+													<td><?= $event->lastupdated ?></td>
+													<td>
+														<a href="<?= base_url('admin/event/edit/'. $event->id)?>" class="btn btn-warning">Edit</a>
+														&nbsp;
+														<a href="<?= base_url('admin/event/detail/'. $event->id)?>" class="btn btn-info">Detail</a>
+														&nbsp;
+														<a href="<?= base_url('admin/event/remove/'. $event->id)?>" class="btn btn-danger">Delete</a>
+													</td>
+												</tr>
+								<?php } ?>
                                 </tbody>
                             </table>
                         </div>
