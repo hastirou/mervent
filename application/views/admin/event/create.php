@@ -54,9 +54,6 @@
 								<input type="file" class="custom-file-input" name="photo" id="coverimage" value="<?= set_value('photo')?>" required>
 								<label class="custom-file-label" for="coverimage">Choose file</label>
 							</div>
-							<div class="input-group-append">
-								<span class="input-group-text">Upload</span>
-							</div>
 						</div>
 					</div>
 

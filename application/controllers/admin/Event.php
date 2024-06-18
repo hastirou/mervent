@@ -45,7 +45,7 @@ class Event extends CI_Controller {
 		}else{
 			$config['upload_path']          = './assets/event/';
 			$config['allowed_types']        = 'jpg|png|jpeg';
-			$config['encrypt_name'] 		= TRUE;
+			$config['encrypt_name'] 		= FALSE;
 			$config['max_size']             = 3024;
 
 			$this->load->library('upload', $config);
