@@ -183,12 +183,37 @@ nav .icon{
 }
 
 /* detailevent */
-	.event-image {
-	display: flex;
+.detail-event{
+	font-family: var(--main-font);
+	margin: auto;
+	width: 680px;
 }
 
-	.event-image img {
-	
+.event-image {
+	width: 100%;
+}
+
+.event-image img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.detail-event h1{
+	font-size: 2em;
+	margin: 15px 0;
+}
+
+.detail-event .information{
+	display: flex;
+	justify-content: space-between;
+	font-size: small;
+	background: #ededed;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.detail-event .content{
+	margin-top: 3em;
 }
 
 

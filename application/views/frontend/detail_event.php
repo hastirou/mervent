@@ -29,10 +29,28 @@
 
 	</nav>
 
-	<section class="content">
+	<section class="detail-event">
         <div class="event-image">
             <img src="<?= base_url('assets/event/'. $events->photo)?>">
         </div>
+		<h1><?= $events->title ?></h1>
+		<div class="information">
+			<span>
+				<b>Date : </b>
+				<?= $events->date ?>
+			</span>
+			<span>
+				<b>at : </b>
+				<?= $events->location ?>
+			</span>
+			<span>
+				<b>Category : </b>
+				<?= ucwords($events->category) ?>
+			</span>
+		</div>
+		<div class="content">
+			<?= $events->description ?>
+		</div>
 	</section>
 
 	<footer>
