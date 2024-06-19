@@ -5,6 +5,20 @@ class Index extends CI_Controller {
 
 	public function home()
 	{
-		$this->load->view('frontend/index');
+		$this->load->model('Event_Model');
+		
+		$data['events'] = $this->Event_Model->data();
+		
+		$this->load->view('frontend/index', $data);
 	}
+	
+	public function detail($id)
+	{
+		$this->load->model('Event_Model');
+		
+		$data['events'] = $this->Event_Model->dataedit($id);
+		
+		$this->load->view('frontend/detail_event', $data);
+	}
+	
 }

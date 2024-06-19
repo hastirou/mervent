@@ -134,45 +134,63 @@ nav .icon{
 	padding-right: 30px;
 }
 
-.popular-event .content-wrapper{
+.popular-event .content-wrapper {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	gap: 30px;
 }
 
-.popular-event .content-wrapper .box{
+.popular-event .content-wrapper .box {
 	border: transparent;
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
 	border-color: white;
 	background-color: white;
 	padding-bottom: 70px;
 }
 
-.popular-event .content-wrapper .box img{
+.popular-event .content-wrapper .box .img-wrapper {
 	width: 100%;
-    object-fit: cover;
+	height: 400px;
+	overflow: hidden;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
 }
 
-.popular-event .content-wrapper .box h3{
+.popular-event .content-wrapper .box img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.popular-event .content-wrapper .box h3 {
 	font-size: 20px;
 	padding: 20px 10px;
 }
-.popular-event .content-wrapper .box button{
-    display: none;
+
+.popular-event .content-wrapper .box button {
+	display: none;
 }
 
-.popular-event .content-wrapper .box .date{
+.popular-event .content-wrapper .box .date {
 	font-size: 16px;
 	font-weight: 600;
 	padding: 10px 10px;
 }
 
-.popular-event .content-wrapper .box .description{
+.popular-event .content-wrapper .box .description {
 	color: #808080;
 	font-size: 16px;
 	padding: 10px 10px;
 }
+
+/* detailevent */
+	.event-image {
+	display: flex;
+}
+
+	.event-image img {
+	
+}
+
 
 /*footer*/
 footer{
@@ -374,56 +392,52 @@ footer{
     .content-wrapper .box{
         display: flex;
         flex-direction: row-reverse;
+		justify-content: space-between;
     }
 
 	.popular-event h1{
 		font-size: 30px;
 	}
-	 .popular-event .content-wrapper{
-	 	grid-template-columns: 1fr;
+	.popular-event .content-wrapper {
+		grid-template-columns: 1fr;
+		gap: 15px;
 	}
-    .popular-event .content-wrapper .box{
-        padding-bottom: 0;
-        height: 100%;
-        border-radius: 10px;
-    }
-    .popular-event .content-wrapper .box h3{
-        font-size: 15px;
-        padding: 8px 8px;
-        padding-top: 10px
-    }
-    
-    .popular-event .content-wrapper .box .date{
-        font-size: 12px;
-        padding: 0 11px;
-    }
-    .popular-event .content-wrapper .box .description {
-        font-size: 12px;
-        margin-top: -7px
-    }
-    .popular-event .content-wrapper .box img{
-        height: 100%;
-        object-fit: cover;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .popular-event .content-wrapper .box button{
-        display: inline;
-        float: right;
-        margin-right: -18px;
-        vertical-align: middle;
-        position: relative;
-        top: 38%;
-        border-radius: 50%;
-        width: 35px;
-        height: 35px;
-        color: red;
-        border: none;
-        background: white;
-        padding-top: 5px;
-        
-        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
-    }
+
+	.popular-event .content-wrapper .box {
+		padding-bottom: 0;
+		height: auto;
+		border-radius: 10px;
+	}
+
+	.popular-event .content-wrapper .box .img-wrapper {
+		width: 250px;
+		height: 150px;
+		overflow: hidden;
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+
+	.popular-event .content-wrapper .box img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.popular-event .content-wrapper .box h3 {
+		font-size: 15px;
+		padding: 8px 8px;
+		padding-top: 10px;
+	}
+
+	.popular-event .content-wrapper .box .date {
+		font-size: 12px;
+		padding: 0 11px;
+	}
+
+	.popular-event .content-wrapper .box .description {
+		font-size: 12px;
+		margin-top: -7px;
+	}
 
 	/*footer*/
     .menu-wrapper {
