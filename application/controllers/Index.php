@@ -20,5 +20,15 @@ class Index extends CI_Controller {
 		
 		$this->load->view('frontend/detail_event', $data);
 	}
+	public function contactus()
+	{
+		
+		$this->load->view('frontend/contact_us');
+	}
+	public function aboutus()
+	{
+		
+		$this->load->view('frontend/about_us');
+	}
 	
 }

@@ -17,9 +17,9 @@
 			<img src="<?= base_url('assets/frontend/img/LOGO.png') ?>">
 		</div>
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Contact Us</a></li>
-			<li><a href="#">About Us</a></li>
+			<li><a href="<?= base_url('') ?>">Home</a></li>
+			<li><a href="<?= base_url('index/contactus') ?>">Contact Us</a></li>
+			<li><a href="<?= base_url('index/aboutus') ?>">About Us</a></li>
 		</ul>
 
 
