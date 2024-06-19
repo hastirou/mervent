@@ -54,9 +54,6 @@
 								<input type="file" class="custom-file-input" name="photo" id="coverimage">
 								<label class="custom-file-label" for="coverimage">Choose file</label>
 							</div>
-							<div class="input-group-append">
-								<span class="input-group-text">Upload</span>
-							</div>
 						</div>
 					</div>
 
@@ -68,7 +65,7 @@
 				<!-- /.card-body -->
 
 				<div class="card-footer">
-					<button type="submit" class="btn btn-primary">Upload</button>
+					<button type="submit" class="btn btn-primary">Update</button>
 				</div>
 			</form>
 		</div>
